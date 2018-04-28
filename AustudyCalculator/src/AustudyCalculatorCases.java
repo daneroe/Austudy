@@ -1,12 +1,31 @@
-public class AustudyCalculatorCases extends CalculatorGUI {
+import java.util.Scanner;
+
+public class AustudyCalculatorCases {
 	
-	public static void myaustudymethod(int scenarios, double income) {
+	
+	static Scanner situation = new Scanner(System.in);
+	static Scanner myincome = new Scanner(System.in);
+
+	
+	public static void myaustudymethod() {
 		
-		// int scenarios = 4; 
+		System.out.println("Welcome to the CENTRELINK AUSTUDY CALCULATOR");
+		System.out.println("What is your situation? Please read the below and enter the number which best reflects your situation and press 'Enter'");
+		System.out.println("1. You are single, under 18 & living at home");
+		System.out.println("2. You are single, under 18, living at home");
+		System.out.println("3. You are single or in a couple, no children, living away from home");
+		System.out.println("4. You are in a couple, with children");
+		System.out.println("5. You are single, with children");
+
+
+		
+		int scenarios = situation.nextInt();
+		int income = myincome.nextInt();
 		double payment = 0; 				// Initial variable for payment that will be received
 		double maxPayment = 445.80;			// The maximum payment available for cases 1,2 & 3
 		double maxPayment2 = 489.60;		// The maximum payment available for case 4
 		double maxPayment3 = 584.20;		// The maximum payment available for case 5
+	
 
 		
 	switch (scenarios) {
@@ -15,7 +34,7 @@ public class AustudyCalculatorCases extends CalculatorGUI {
 	case 1:	
 				
 		if ((income < 437)) {	
-		System.out.println("You will receive the max payment");
+		System.out.println("You will receive the max payment of $445.80");
 		
 		}
 		
@@ -50,7 +69,7 @@ public class AustudyCalculatorCases extends CalculatorGUI {
 	case 2:	
 		
 		if ((income < 437)) {	
-		System.out.println("You will receive the max payment");
+		System.out.println("You will receive the max payment of 445.50");
 		
 		}
 		
@@ -85,7 +104,7 @@ public class AustudyCalculatorCases extends CalculatorGUI {
 	case 3:	
 	
 		if ((income < 437)) {	
-		System.out.println("You will receive the max payment");
+		System.out.println("You will receive the max payment of $445.50");
 		
 		}
 		
@@ -120,7 +139,7 @@ public class AustudyCalculatorCases extends CalculatorGUI {
 	case 4:	
 	
 		if ((income < 437)) {	
-		System.out.println("You will receive the max payment");
+		System.out.println("You will receive the max payment of $489.60");
 		
 		}
 		
@@ -155,7 +174,7 @@ public class AustudyCalculatorCases extends CalculatorGUI {
 	case 5:	
 		
 		if ((income < 437)) {	
-		System.out.println("You will receive the max payment");
+		System.out.println("You will receive the max payment of $584.20");
 		
 		}
 		
@@ -185,10 +204,14 @@ public class AustudyCalculatorCases extends CalculatorGUI {
 		break;
 		
 		}	
-
-		}
-	
+		
+	}
 	
 	}
-			
+	
 }
+
+		
+
+
+	
