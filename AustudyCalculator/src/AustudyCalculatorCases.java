@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class AustudyCalculatorCases {
 	
 	
-	static Scanner situation = new Scanner(System.in);
-	static Scanner myincome = new Scanner(System.in);
+	static Scanner input = new Scanner(System.in);
 
 	
 	public static void myaustudymethod() {
@@ -17,10 +16,12 @@ public class AustudyCalculatorCases {
 		System.out.println("4. You are in a couple, with children");
 		System.out.println("5. You are single, with children");
 
-
+		int scenarios = input.nextInt();
 		
-		int scenarios = situation.nextInt();
-		int income = myincome.nextInt();
+		System.out.println("What is your income fortnighly income, before tax?:");
+
+		double income = input.nextDouble();
+		
 		double payment = 0; 				// Initial variable for payment that will be received
 		double maxPayment = 445.80;			// The maximum payment available for cases 1,2 & 3
 		double maxPayment2 = 489.60;		// The maximum payment available for case 4
