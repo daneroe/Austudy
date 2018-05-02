@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class AustudyCalculatorCases {
 	
 	
+	
 	static Scanner input = new Scanner(System.in);
 
 	
@@ -11,7 +12,7 @@ public class AustudyCalculatorCases {
 		System.out.println("Welcome to the CENTRELINK AUSTUDY CALCULATOR");
 		System.out.println("What is your situation? Please read the below and enter the number which best reflects your situation and press 'Enter'");
 		System.out.println("1. You are single, under 18 & living at home");
-		System.out.println("2. You are single, under 18, living at home");
+		System.out.println("2. You are single, over 18 & living at home");
 		System.out.println("3. You are single or in a couple, no children, living away from home");
 		System.out.println("4. You are in a couple, with children");
 		System.out.println("5. You are single, with children");
